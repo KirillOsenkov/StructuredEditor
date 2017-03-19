@@ -7,3 +7,11 @@ Structured editors directly operate on the syntax tree of a program as opposed t
 
 [Blog post introduction](http://blogs.msdn.com/kirillosenkov/archive/2009/09/08/first-videos-of-the-structured-editor-prototype.aspx)
 
+![Screenshot1](/docs/HelloWorld1.PNG)
+![Screenshot2](/docs/BlockLike_IntelliSense.png)
+
+This was my thesis in 2007, see details here:
+http://osenkov.com/diplom/
+
+Thesis PDF:
+http://osenkov.com/diplom/KirillOsenkovDiplom.pdf
