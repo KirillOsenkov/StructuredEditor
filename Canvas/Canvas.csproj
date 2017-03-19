@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GuiLabs.Canvas</RootNamespace>
+    <AssemblyName>GuiLabs.Canvas</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DrawOperations\Caret.cs" />
+    <Compile Include="DrawStyle\BoxLayoutParameters.cs" />
+    <Compile Include="DrawStyle\FillStyle\FillMode.cs" />
+    <Compile Include="DrawStyle\FourSideValues.cs" />
+    <Compile Include="DrawStyle\IStyleFactory.cs" />
+    <Compile Include="DrawStyle\Picture\GDIPlusPicture.cs" />
+    <Compile Include="DrawStyle\Picture\IPicture.cs" />
+    <Compile Include="DrawStyle\Picture\Picture.cs" />
+    <Compile Include="DrawStyle\ShapeStyle.cs" />
+    <Compile Include="DrawStyle\IShapeStyle.cs" />
+    <Compile Include="DrawStyle\StyleFactory.cs" />
+    <Compile Include="DrawStyle\StyleListEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawStyle\StyleListEditor.Designer.cs">
+      <DependentUpon>StyleListEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\IKeyEvents.cs" />
+    <Compile Include="Events\MouseWithKeysEventHandler.cs" />
+    <Compile Include="Events\RepaintHandler.cs" />
+    <Compile Include="DrawOperations\AbstractDrawOperations.cs" />
+    <Compile Include="DrawOperations\GDI\GDIDrawOperations.cs" />
+    <Compile Include="DrawOperations\GDIPlus\GDIPlusDrawOperations.cs" />
+    <Compile Include="DrawOperations\IDrawOperations.cs" />
+    <Compile Include="DrawOperations\Transform\TransformDrawOperations.cs" />
+    <Compile Include="DrawOperations\Transform\TranslateTransform.cs" />
+    <Compile Include="DrawStyle\Factory\GDIDrawInfoFactory.cs" />
+    <Compile Include="DrawStyle\Factory\GDIPlusDrawInfoFactory.cs" />
+    <Compile Include="DrawStyle\Factory\IDrawInfoFactory.cs" />
+    <Compile Include="DrawStyle\FillStyle\GDIFillStyle.cs" />
+    <Compile Include="DrawStyle\FillStyle\GDIPlusFillStyle.cs" />
+    <Compile Include="DrawStyle\FillStyle\IFillStyleInfo.cs" />
+    <Compile Include="DrawStyle\FontStyle\GDIFont.cs" />
+    <Compile Include="DrawStyle\FontStyle\GDIFontStyle.cs" />
+    <Compile Include="DrawStyle\FontStyle\GDIPlusFontStyle.cs" />
+    <Compile Include="DrawStyle\FontStyle\GDIPlusFontWrapper.cs" />
+    <Compile Include="DrawStyle\FontStyle\IFontInfo.cs" />
+    <Compile Include="DrawStyle\FontStyle\IFontStyleInfo.cs" />
+    <Compile Include="DrawStyle\LineStyle\GDILineStyle.cs" />
+    <Compile Include="DrawStyle\LineStyle\GDIPlusLineStyle.cs" />
+    <Compile Include="DrawStyle\LineStyle\ILineStyleInfo.cs" />
+    <Compile Include="DrawWindow\DrawWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawWindow\IDrawWindow.cs" />
+    <Compile Include="Events\IKeyHandler.cs" />
+    <Compile Include="Events\IMouseEvents.cs" />
+    <Compile Include="Events\IMouseHandler.cs" />
+    <Compile Include="Events\KeyMouseHandler.cs" />
+    <Compile Include="Events\MouseEventArgsWithKeys.cs" />
+    <Compile Include="Events\MouseHandler.cs" />
+    <Compile Include="Events\SizeChangedHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderer\GDI\GDIPlusRendererGDIBackBuffer.cs" />
+    <Compile Include="Renderer\GDI\GDIRenderer.cs" />
+    <Compile Include="Renderer\IRenderer.cs" />
+    <Compile Include="Renderer\RendererSingleton.cs" />
+    <Compile Include="Shapes\IDrawableRect.cs" />
+    <Compile Include="Shapes\IHasBounds.cs" />
+    <Compile Include="Shapes\IMovable.cs" />
+    <Compile Include="Shapes\IShapeWithEvents.cs" />
+    <Compile Include="Shapes\IDrawable.cs" />
+    <Compile Include="Shapes\IShape.cs" />
+    <Compile Include="Shapes\Shape.cs" />
+    <Compile Include="Shapes\ShapeWithEvents.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Rect.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DrawStyle\Readme.htm" />
+    <Content Include="Events\Readme.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Canvas.cd">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="DrawWindow\DrawWindowRendererDrawOperations.cd" />
+    <None Include="Shapes\Shapes.cd" />
+    <None Include="Shapes\IShape.cd">
+      <SubType>
+      </SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DrawStyle\StyleListEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StyleListEditor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

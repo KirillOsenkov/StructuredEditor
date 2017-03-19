@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.4" />
+  <Class Name="GuiLabs.Canvas.DrawWindow" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DrawWindow\DrawWindow.cs</FileName>
+      <HashCode>gwiAAAQKACKAAQKAQACEAAAGiBIACAIhIAHABBAKAQA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Renderer" />
+    </ShowAsAssociation>
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Field Name="conversionRect" Hidden="true" />
+      <Field Name="mDefaultKeyHandler" Hidden="true" />
+      <Field Name="mDefaultMouseHandler" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="GuiLabs.Canvas.Renderer.IRenderer" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Renderer\IRenderer.cs</FileName>
+      <HashCode>gAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAABBAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DrawOperations" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="GuiLabs.Canvas.DrawOperations.IDrawOperations">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DrawOperations\IDrawOperations.cs</FileName>
+      <HashCode>gBAARABQABAEAgAAKABAgAAAAAAAAAABAEAAQCAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Interface>
+  <Interface Name="GuiLabs.Canvas.IDrawWindow" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>DrawWindow\IDrawWindow.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAADAAAMAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

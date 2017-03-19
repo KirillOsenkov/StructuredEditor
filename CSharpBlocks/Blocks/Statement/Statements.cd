@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Microsoft Sans Serif" Size="8.4" />
+  <Class Name="GuiLabs.Editor.CSharp.StatementLine" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Statement\StatementLine.cs</FileName>
+      <HashCode>CAAAAkAAAAAgIACAAAAAAAIAAAAgCAAIAAEAAAAACAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="StatementInfo" />
+      <Property Name="LocalVariableDeclaration" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="LocalVariableDeclaration" Type="GuiLabs.Editor.CSharp.VariableDeclaration">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.21" Y="-0.248" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.CodeLine" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Statement\CodeLine.cs</FileName>
+      <HashCode>AgAAAAAACIAEAAAgAAAABAAgAAAAKAAABAAAAAAKAAE=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.VariableDeclaration" Collapsed="true">
+    <Position X="3.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>LanguageService\VariableDeclaration.cs</FileName>
+      <HashCode>ACIAAAAAAAAAABAAAAAAAAQIEAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <Lollipop Orientation="Bottom" Position="0.208" />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.TextLine" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.ExpressionBlock" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\Expression\ExpressionBlock.cs</FileName>
+      <HashCode>AgAAAAAAAAAAAAAAAAAABAAAAAAACAAAAIEAAAAACAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.TextBoxBlockWithCompletion" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="GuiLabs.Editor.CSharp.IStatement" Collapsed="true">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Statement\IStatement.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LocalVariableDeclaration" />
+    </ShowAsAssociation>
+    <AssociationLine Name="LocalVariableDeclaration" Type="GuiLabs.Editor.CSharp.VariableDeclaration">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.143" Y="0.077" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Interface>
+</ClassDiagram>

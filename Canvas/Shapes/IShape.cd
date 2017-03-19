@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Microsoft Sans Serif" Size="8.4" />
+  <Interface Name="GuiLabs.Canvas.Shapes.IShape">
+    <Position X="1.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Shapes\IShape.cs</FileName>
+      <HashCode>AAAAAAAAAABAAIEAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GuiLabs.Canvas.Events.IMouseHandler">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Events\IMouseHandler.cs</FileName>
+      <HashCode>AAgAAAAAAAAAAACAAAAAAAACABAACAAhIAAAAAACAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GuiLabs.Canvas.Events.IKeyHandler">
+    <Position X="2.25" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <FileName>Events\IKeyHandler.cs</FileName>
+      <HashCode>AggAAAAAAACAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GuiLabs.Canvas.Shapes.IDrawable">
+    <Position X="4.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Shapes\IDrawable.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAEAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

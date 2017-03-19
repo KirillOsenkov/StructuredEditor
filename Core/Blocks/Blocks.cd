@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Microsoft Sans Serif" Size="8.4" />
+  <Class Name="GuiLabs.Editor.Blocks.Block" Collapsed="true">
+    <Position X="3" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Block.cs</FileName>
+      <HashCode>CoVBJEvpYPq90qdwhLKZXBhuijOKymrLdKkbAyBO0DQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.ContainerBlock" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Container\ContainerBlock.cs</FileName>
+      <HashCode>AAYAAAAAIAQAICgQAIgEQAwICAAAgAIAAAAAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.LinearContainerBlock" Collapsed="true">
+    <Position X="6.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Container\Linear\LinearContainerBlock.cs</FileName>
+      <HashCode>ECPAEQAgIQACAAkEAAAIBIAIEAJAAAAACAACQAIQgAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.RootBlock" Collapsed="true">
+    <Position X="6.75" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Container\Root\RootBlock.cs</FileName>
+      <HashCode>AUIQEgAAIAiCApABYAAADAAgkJoEAQBIZABAAAACAgQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.UniversalBlock" Collapsed="true">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Container\Universal\UniversalBlock.cs</FileName>
+      <HashCode>AAIAAAAAAEABQAAAAICCDAAAEBIACAJBAAAAAAAKAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.EmptyBlock" Collapsed="true">
+    <Position X="0.5" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Blocks\Empty\EmptyBlock.cs</FileName>
+      <HashCode>AAQAJAAgABABAIAAABAABAggAgIAKAAAAgEAAAgAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.TextBoxBlock" Collapsed="true">
+    <Position X="0.5" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\TextBoxBlock.cs</FileName>
+      <HashCode>gAUAJCCgAJAEwAAEABAABEoYAgIAEQSbACWGDAAIAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.TextBoxBlockWithCompletion" Collapsed="true">
+    <Position X="0.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\TextBoxBlockWithCompletion.cs</FileName>
+      <HashCode>AgIAAUAAARABCAQAABIABAACUAAACAAAAgAChAACAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.LabelBlock" Collapsed="true">
+    <Position X="3" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\LabelBlock.cs</FileName>
+      <HashCode>AAAABAAgAAgAQAAEABAABAAAAAAAAAAAAAUACAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.FocusableLabelBlock" Collapsed="true">
+    <Position X="3" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\FocusableLabelBlock.cs</FileName>
+      <HashCode>AAAAAAAIAAEAABAoAAAAAAAAAAIACCABAAUAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.ButtonBlock" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Button\ButtonBlock.cs</FileName>
+      <HashCode>AIAAAQAgAAAAgAAAABAABAAAAAQAAAAABAECAAAAAQQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.PictureBlock" Collapsed="true">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Picture\PictureBlock.cs</FileName>
+      <HashCode>AgIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

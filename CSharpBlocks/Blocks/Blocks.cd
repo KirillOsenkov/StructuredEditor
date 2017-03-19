@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Microsoft Sans Serif" Size="8.4" />
+  <Class Name="GuiLabs.Editor.CSharp.ControlStructureBlock" Collapsed="true">
+    <Position X="1.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\ControlStructures\ControlStructureBlock.cs</FileName>
+      <HashCode>AAAAAAgAAAABAAAAAAAABAAAEAMACQAAACEAAAACAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.CodeBlock" Collapsed="true">
+    <Position X="2.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Containers\CodeBlock.cs</FileName>
+      <HashCode>AgAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.UniversalBlock" Collapsed="true">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.ContainerBlock" Collapsed="true">
+    <Position X="2" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.Block" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.MethodBlock" Collapsed="true">
+    <Position X="3.75" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Blocks\Method\MethodBlock.cs</FileName>
+      <HashCode>gABABAgAAAAAgAAgQBgAAAQBAAAAAEACAKESAAADAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.MethodOrPropertyAccessor" Collapsed="true">
+    <Position X="3.75" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Blocks\Method\MethodOrPropertyAccessor.cs</FileName>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAACAAAACAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.LabelBlock" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.TextBoxBlock" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.LinearContainerBlock" Collapsed="true">
+    <Position X="0.75" Y="2.75" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.ForeachBlock" Collapsed="true">
+    <Position X="1.5" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\ControlStructures\ForeachBlock.cs</FileName>
+      <HashCode>BCABAAAAAQWAsAAkACAAAAAAQAAABAAGABARiAAEQEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.StatementLine" Collapsed="true">
+    <Position X="6" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Statement\StatementLine.cs</FileName>
+      <HashCode>CAAAAkAAAAAhIASAAAAABAIAAAAgCAAIAAEAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.ExpressionBlock" Collapsed="true">
+    <Position X="6" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\Expression\ExpressionBlock.cs</FileName>
+      <HashCode>AAAAAAAAAgABAAQAAAAABAAAAAAQCAAAAAECAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.CodeLine" Collapsed="true">
+    <Position X="6" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Statement\CodeLine.cs</FileName>
+      <HashCode>AgAAAAAACIAFAAAgAAAAAAAgAAAAKAAABIAAAAAKAAE=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.TextLine" Collapsed="true">
+    <Position X="5.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.TextBoxBlockWithCompletion" Collapsed="true">
+    <Position X="5.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+</ClassDiagram>

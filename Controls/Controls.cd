@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.4" />
+  <Class Name="GuiLabs.Canvas.Controls.Button" Collapsed="true">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Button\Button.cs</FileName>
+      <HashCode>AgAAAAAYOACAABggAAAAAAAACEYAAAAMJQEEDAACAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.ScrollbarButtonStyle" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\Controls\ScrollbarButtonStyle.cs</FileName>
+      <HashCode>AAAAAAEAAAAAAgAgAAAAAEAAEEAAAAAAAABkAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.ContainerControl" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Containers\ContainerControl.cs</FileName>
+      <HashCode>AAIAAAAUAIArEiiAAIIEBATCENQISgghIBAACAQDAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.Layouter" Collapsed="true">
+    <Position X="21.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Containers\Layouts\Layouter.cs</FileName>
+      <HashCode>AAABAQAAAAAAEAAgAAAIAQAAAMAAAAAgACAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.RootControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Containers\Root\RootControl.cs</FileName>
+      <HashCode>AoBAggQIgAAAA0ESCAQAIAEAgBgKoIEIIQFBBUAoAgA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.Control" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Control.cs</FileName>
+      <HashCode>AJgigQCwImJLEyDABCgAUAEhBEJZABkYDCFUEKABQCA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.RectShape" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Figures\RectShape.cs</FileName>
+      <HashCode>AIAAAAAEAAAAgAAAAAAAAAAAAAAAAAgAAAEAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.Label" Collapsed="true">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Label\Label.cs</FileName>
+      <HashCode>AAAAAAAEAAAAQgAEAICAAAACAAAAAAAgAAQACAAAAIA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.PictureBox" Collapsed="true">
+    <Position X="12.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PictureBox\PictureBox.cs</FileName>
+      <HashCode>AAAAAAAMAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.PictureChangeBox" Collapsed="true">
+    <Position X="12.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PictureBox\PictureChangeBox.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgBAAAAAABAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.PictureLibrary" Collapsed="true">
+    <Position X="24.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PictureLibrary\PictureLibrary.cs</FileName>
+      <HashCode>EQAAgEAAAAAAAQIAACAACBADgAkgACAAQCCAAAIIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.Resources" Collapsed="true">
+    <Position X="19.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAAAAAAACAAEBEQAAAwAAIIAAwAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.ArrowButton" Collapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\Controls\ArrowButton.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAACAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.ArrowButtonStyle" Collapsed="true">
+    <Position X="6.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\Controls\ArrowButtonStyle.cs</FileName>
+      <HashCode>AAAIAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.HScrollbar" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\HScrollbar.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAAAgAAAAAAAAQAEAAAAAAgAAAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.ChildNumberRange&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\NumberRange\ChildNumberRange.cs</FileName>
+      <HashCode>AIAAAAAAAEAAgAAEEAAIQAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.CompositeRange" Collapsed="true">
+    <Position X="3.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\NumberRange\CompositeDoubleRange.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAEAEAAAAAAAAAAAQAAAAAAAAAAAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.CompositeNumberRange&lt;T&gt;" Collapsed="true">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\NumberRange\CompositeNumberRange.cs</FileName>
+      <HashCode>AIAAAAAAAAAAgAAAEAAIAAAAAACAAAAAAAAAAAIAAAE=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.NumberRange&lt;T&gt;" Collapsed="true">
+    <Position X="23" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\NumberRange\NumberRange.cs</FileName>
+      <HashCode>AIAAAAAAAAAAgAAAEAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.ScrollableContainer" Collapsed="true">
+    <Position X="14.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\ScrollableContainer.cs</FileName>
+      <HashCode>QgAAAAAEAgiIApiAAAABCAICABIGKACFMEQBEGADAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.Scrollbar" Collapsed="true">
+    <Position X="4.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\Scrollbar.cs</FileName>
+      <HashCode>CAZBIAAlASIDOqAAoMRgEWIAUVAEAIgAAVggAAQABMg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.ScrollbarFactory" Collapsed="true">
+    <Position X="23" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\ScrollbarFactory.cs</FileName>
+      <HashCode>EAgQgAIIAgAAAIAAAAAkAAAAAAAoAgAAQAgAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.ShapeWithScrollbar" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\ShapeWithScrollbar.cs</FileName>
+      <HashCode>RAgCaAANQVgAEQCEwAQEQgAAEAgAAAEAAACEAAEQAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.VScrollbar" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\VScrollbar.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAAAgAAAAAAAAAAAAAAAAAgAAAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.CommonCharFilters" Collapsed="true">
+    <Position X="24.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Text\TextBox.CharFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.TextBox" Collapsed="true">
+    <Position X="17" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Text\TextBox.Actions.cs</FileName>
+      <HashCode>QwoQYEEeEB2AY0kQh5ZgDGApoRaJuR+bYI0SbAQDIDo=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.KeyboardBrakeSystem" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utils\KeyboardBrakeSystem.cs</FileName>
+      <HashCode>AAAAAAAAAAAAIAAAQAAAAAABAQAADARQAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GuiLabs.Canvas.Controls.ILayout" Collapsed="true">
+    <Position X="21.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Containers\Layouts\ILayout.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAgAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GuiLabs.Canvas.Controls.IScrollable" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\IScrollable.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GuiLabs.Canvas.Controls.IScrollableContainer" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\IScrollableContainer.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GuiLabs.Canvas.Controls.INumberRange&lt;T&gt;" Collapsed="true">
+    <Position X="23" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\NumberRange\INumberRange.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GuiLabs.Canvas.Controls.IHasText" Collapsed="true">
+    <Position X="19.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Text\IHasText.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="GuiLabs.Canvas.Controls.DisplayCompletionListHandler" Collapsed="true">
+    <Position X="24.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Containers\Root\DisplayCompletionListHandler.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="GuiLabs.Canvas.Controls.ButtonPushedHandler" Collapsed="true">
+    <Position X="21.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\Events\ButtonPushedHandler.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="GuiLabs.Canvas.Controls.ScrolledHandler" Collapsed="true">
+    <Position X="19.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\Events\ScrolledHandler.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="GuiLabs.Canvas.Controls.ScrollToHandler" Collapsed="true">
+    <Position X="21.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Scrollbar\Events\ScrollToHandler.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="GuiLabs.Canvas.Controls.CharFilter" Collapsed="true">
+    <Position X="23" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Text\TextBox.CharFilter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="GuiLabs.Canvas.Controls.TextChangedEventHandler" Collapsed="true">
+    <Position X="23" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Text\TextChangedHandler.cs</FileName>
+      <HashCode>AAACAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="GuiLabs.Canvas.Controls.ActivatedHandler" Collapsed="true">
+    <Position X="19.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Utils\ActivatedHandler.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+</ClassDiagram>

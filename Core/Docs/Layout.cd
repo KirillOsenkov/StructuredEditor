@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.4" />
+  <Class Name="GuiLabs.Editor.Blocks.RootBlock" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Container\Root\RootBlock.cs</FileName>
+      <HashCode>AUIQEgAAIAiCApABYAAADAAglJoEAQBIZABAAAACAgQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyRootControl" />
+    </ShowAsAssociation>
+    <Members>
+      <Field Name="mActionManager" Hidden="true" />
+      <Field Name="mMyRootControl" Hidden="true" />
+      <Method Name="RaiseUndoBufferChanged" Hidden="true" />
+      <Method Name="RootBlock" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.RootControl" Collapsed="true">
+    <Position X="3.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.ContainerControl" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.LinearContainerBlock" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Container\Linear\LinearContainerBlock.cs</FileName>
+      <HashCode>ECPAEQAgIQACAAkEAAAIBIAIEAJAAAAACAACQAIQgAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="mMyListControl" Hidden="true" />
+    </Members>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.ContainerBlock" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Container\ContainerBlock.cs</FileName>
+      <HashCode>AAYAAAAAIAQAICgQAIgEQAwICAAAgAIAAAAAAABAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Children" />
+    </ShowAsAssociation>
+    <Members>
+      <Field Name="mChildren" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.Control" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="GuiLabs.Canvas.Controls.ILayout" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="GuiLabs.Editor.Lists.IChildrenList" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Lists\IChildrenList.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GuiLabs.Editor.Lists.IBlockList" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Lists\IBlockList.cs</FileName>
+      <HashCode>AAJAAEAAAAAgAAAQAAAABAAgAAEAAQAAAAAgAABAACA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Microsoft Sans Serif" Size="8.4" />
+  <Class Name="GuiLabs.Editor.Blocks.ContainerBlock" Collapsed="true">
+    <Position X="1.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Container\ContainerBlock.cs</FileName>
+      <HashCode>AAYAAAAAIAQAACgQAAgEQAQICAAAgAIAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.Block" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Block.cs</FileName>
+      <HashCode>AoVBIEqpYPqd0iNwALIJXBgqjhMCimrLJKEbACBuwDQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyControl" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="GuiLabs.Editor.Blocks.Block.MoveFocusDirection" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Blocks\Block.Focus.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.Control" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="GuiLabs.Canvas.Controls.Control.NeighborType" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.RootBlock" Collapsed="true">
+    <Position X="1.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Container\Root\RootBlock.cs</FileName>
+      <HashCode>AEKQEIAgIASCQBAJIAAABAAgkJoGwRBIIoAAgAECAAQ=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyRootControl" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.RootControl" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.LinearContainerControl" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GuiLabs.Canvas.Controls.ContainerControl" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.LinearContainerBlock" Collapsed="true">
+    <Position X="1.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Container\Linear\LinearContainerBlock.cs</FileName>
+      <HashCode>EAOAAAAgAQAAAAgEAAAIBAAIEAJAAAAACAACQAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MyListControl" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+</ClassDiagram>

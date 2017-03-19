@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Project structure</title>
+    <link href="docs.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>
+        Project Structure</h1>
+    <p>
+        <img src="LibraProjectArchitecture.png" alt="Project Architecture" />&nbsp;</p>
+    <p>
+        The entire solution consists of the following projects:</p>
+    <table>
+        <tr>
+            <td>
+                <a href="#Canvas">Canvas</a></td>
+            <td>
+                Graphical library</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#Controls">Controls</a></td>
+            <td>
+                Definition of controls
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#Core">Core</a></td>
+            <td>
+                Basic blocks and other base classes</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#CSharp_Editor">CSharp_Editor</a></td>
+            <td>
+                Stefan's C# Editor (functionality and UI in one project)</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#HTMLEditor">HTMLEditor</a></td>
+            <td>
+                Martin, Thomas and Christian's HTML Editor</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#CSharpBlocks">CSharpBlocks</a></td>
+            <td>
+                Test C# Editor functionality</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#CSharpEditor">CSharpEditor</a></td>
+            <td>
+                Test C# Editor UI</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#XmlBlocks">XmlBlocks</a></td>
+            <td>
+                Test XML Editor functionality</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#XmlEditorTest">XmlEditorTest</a></td>
+            <td>
+                Test XML Editor UI</td>
+        </tr>
+    </table>
+    <p class="note">
+        C# and XML test projects have functionality separated from the UI, but it isn't
+        very important. We could also put them in one project as well.</p>
+    <h2>
+        <a id="Canvas">1. Canvas</a></h2>
+    <p>
+        Canvas is a graphical library.</p>
+    <p>
+        Functionality:</p>
+    <ul>
+        <li>Windows Forms Control (<span class="CodeWord">DrawWindow</span>) to draw on</li>
+        <li>Drawing surface with back-buffering (anti-flickering) </li>
+        <li>Primitive draw operations (DrawLine, DrawRectangle, DrawString, DrawImage)</li>
+        <li>Abstract drawing styles (ILineStyleInfo, IFillStyleInfo, IFontStyleInfo, IPicture)</li>
+        <li>Base definition classes for Shapes (any objects that can be drawn on the surface)</li>
+    </ul>
+    <p>
+        <a href="../../Canvas/Controls/ScrollBar/readme.htm">Scrolling</a></p>
+    <p>
+        <a href="../../Canvas/DrawStyle/Readme.htm">Shape styles</a></p>
+    <h2>
+        <a id="Controls">2. Controls</a></h2>
+    <p class="note">
+        Depends on: Canvas</p>
+    <p>
+        A library of visual (interactive) controls that can be drawn on Canvas, such as
+        TextBox, List, Label, Button, Scrollbar, Picture etc.</p>
+    <ul>
+        <li>Controls are shapes (see Canvas).</li><li>Controls react on mouse and keyboard by
+            raising events (MouseDown, MouseMove, KeyDown)</li><li>A control can have focus (maximum
+                one control can be focused on the canvas at one time).</li>
+    </ul>
+    <h2>
+        <a id="Core">3. Core</a></h2>
+    <p class="note">
+        Depends on: Canvas, Controls</p>
+    <p>
+        Core defines base classes to model an editor:</p>
+    <ul>
+        <li>Actions - transactions for the Undo/Redo stack</li>
+        <li>Blocks - base block classes to inherit from:
+            <ul>
+                <li>Container - a block that can contain a collection of child blocks<ul>
+                    <li>Root - a container that can be displayed in a ViewWindow</li></ul>
+                </li>
+                <li>Empty - (text) blocks that serve as placeholders for other blocks</li></ul>
+        </li>
+        <li>Docs - project documentation</li>
+        <li>Lists - collection classes to contain blocks</li>
+        <li>UI - base User Interface classes<ul>
+            <li>CompletionList - DropDown "IntelliSense" listbox</li><li>ViewWindow - Windows Forms
+                Control, inherits from DrawWindow, that can display a RootBlock in it.</li></ul>
+        </li>
+    </ul>
+    <p>
+        Blocks and controls form a foundation of each editor. Each block is represented
+        by a corresponding control.</p>
+    <h3>
+        Additional topics:</h3>
+    <p>
+        <a href="Functionality/MouseInput.htm">Mouse input</a></p>
+    <p>
+        <a href="../UI/CompletionList/readme.htm">Completion list</a></p>
+    <h2>
+        4<a id="CSharp_Editor">. CSharp_Editor</a></h2>
+    <p class="note">
+        Depends on: Canvas, Controls, Core (as .dll)</p>
+    <p>
+        Stefan's C# Editor: functionality and UI client in the same assembly.</p>
+    <h2>
+        <a id="HTMLEditor">5. HTMLEditor</a></h2>
+    <p class="note">
+        Depends on: Canvas, Controls, Core</p>
+    <p>
+        Blocks and controls definition and user interface of an HTML editor.</p>
+    <p>
+        Start goal of the HTML editor is to be able to edit and save HTML files, supported
+        tags like in this documentation.</p>
+    <h2>
+        <a id="CSharpBlocks">6. CSharpBlocks</a></h2>
+    <p class="note">
+        Depends on: Canvas, Controls, Core</p>
+    <p>
+        Classes that define an editor for C#</p>
+    <h2>
+        <a id="CSharpEditor">7. CSharpEditor</a></h2>
+    <p class="note">
+        Depends on: Canvas, Controls, Core, CSharpBlocks</p>
+    <p>
+        UI Client for the C# editor (Windows Forms)</p>
+    <h2>
+        <a id="XmlBlocks">8. XmlBlocks</a></h2>
+    <p class="note">
+        Depends on: Canvas, Controls, Core</p>
+    <p>
+        Definition of blocks and controls to edit an XML document hierarchy (DOM).</p>
+    <h2>
+        <a id="XmlEditorTest">9. XmlEditorTest</a></h2>
+    <p class="note">
+        Depends on: Canvas, Controls, Core, XmlBlocks</p>
+    <p>
+        Simple UI for the XmlBlocks, mainly a single form with a ViewWindow, which displays
+        an XmlRootBlock.</p>
+</body>
+</html>

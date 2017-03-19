@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GuiLabs.Editor</RootNamespace>
+    <AssemblyName>GuiLabs.Editor.Framework</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GuiLabs.Undo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\GuiLabs.Undo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\ActionFactory.cs" />
+    <Compile Include="Actions\BlockActions.cs" />
+    <Compile Include="Actions\RootBlockAction.cs" />
+    <Compile Include="Actions\TransactionExtensions.cs" />
+    <Compile Include="Actions\Types\AddBlocksAction.cs" />
+    <Compile Include="Actions\Types\PrependBlocksAction.cs" />
+    <Compile Include="Actions\Types\RemoveBlocksAction.cs" />
+    <Compile Include="Actions\Types\RenameItemAction.cs" />
+    <Compile Include="Actions\Types\ReplaceBlocksAction.cs" />
+    <Compile Include="Blocks\Block.cs" />
+    <Compile Include="Blocks\Block.Focus.cs" />
+    <Compile Include="Blocks\Block.Help.cs" />
+    <Compile Include="Blocks\Button\ButtonBlock.cs" />
+    <Compile Include="Blocks\Container\ContainerBlock.cs" />
+    <Compile Include="Blocks\Container\ContainerBlock.Focus.cs" />
+    <Compile Include="Blocks\Container\Linear\HContainerBlock.cs" />
+    <Compile Include="Blocks\Container\Linear\LinearContainerBlock.cs" />
+    <Compile Include="Blocks\Container\Linear\LineBlock.cs" />
+    <Compile Include="Blocks\Container\Linear\VContainerBlock.cs" />
+    <Compile Include="Blocks\Container\NameValue\NameValueBlock.cs" />
+    <Compile Include="Blocks\Container\Root\RootBlock.cs" />
+    <Compile Include="Blocks\Container\Universal\UniversalBlock.cs" />
+    <Compile Include="Blocks\Block.Operations.cs" />
+    <Compile Include="Blocks\Block.Visibility.cs" />
+    <Compile Include="Blocks\Empty\EmptyBlock.cs" />
+    <Compile Include="Blocks\Empty\ISeparatorBlock.cs" />
+    <Compile Include="Blocks\Factory\BlockActivatorFactory.cs" />
+    <Compile Include="Blocks\Factory\BlockFactory.cs" />
+    <Compile Include="Blocks\Factory\BlockNavigator.cs" />
+    <Compile Include="Blocks\Factory\BlockSerializationAttribute.cs" />
+    <Compile Include="Blocks\Factory\IBlockFactory.cs" />
+    <Compile Include="Blocks\Factory\IBlockProvider.cs" />
+    <Compile Include="Blocks\Picture\PictureBlock.cs" />
+    <Compile Include="Blocks\Text\FocusableLabelBlock.cs" />
+    <Compile Include="Blocks\Text\LabelBlock.cs" />
+    <Compile Include="Blocks\Text\TextSelectionBlock.cs" />
+    <Compile Include="Blocks\Text\SeparatorBlock.cs" />
+    <Compile Include="Blocks\Text\SpaceBlock.cs" />
+    <Compile Include="Blocks\Text\TemporaryCompletionBlock.cs" />
+    <Compile Include="Blocks\Text\TextBoxBlock.cs" />
+    <Compile Include="Blocks\Text\TextBoxBlockWithCompletion.cs" />
+    <Compile Include="Blocks\Text\TextLine.cs" />
+    <Compile Include="Lists\ChildrenControlList.cs" />
+    <Compile Include="Clipboard\Selection\Selection.cs" />
+    <Compile Include="UI\Commands\BlockCommand.cs" />
+    <Compile Include="UI\CompletionList\CompletionFunctionality.cs" />
+    <Compile Include="UI\CompletionList\CompletionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CompletionList\CompletionList.Designer.cs">
+      <DependentUpon>CompletionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lists\BlockList.cs" />
+    <Compile Include="Lists\ChildrenList.cs" />
+    <Compile Include="Lists\IBlockList.cs" />
+    <Compile Include="Lists\IChildrenList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\CompletionList\CompletionListItem.cs" />
+    <Compile Include="UI\CompletionList\CompletionListItemClickedDelegate.cs" />
+    <Compile Include="UI\CompletionList\CompletionListItems.cs" />
+    <Compile Include="UI\CompletionList\CompletionListItemWithVisibilityConditions.cs" />
+    <Compile Include="UI\CompletionList\ICompletionList.cs" />
+    <Compile Include="UI\CompletionList\ICompletionListBuilder.cs" />
+    <Compile Include="UI\CompletionList\ICompletionListItems.cs" />
+    <Compile Include="UI\CompletionList\IHasCompletion.cs" />
+    <Compile Include="UI\CompletionList\Items\CreateBlocksItem.cs">
+    </Compile>
+    <Compile Include="UI\CompletionList\Items\DelegateCompletionListItem.cs">
+    </Compile>
+    <Compile Include="UI\CompletionList\Items\ItemBuilder.cs" />
+    <Compile Include="UI\CompletionList\Items\ReplaceBlocksItem.cs" />
+    <Compile Include="UI\CompletionList\Items\TextCompletionItem.cs">
+    </Compile>
+    <Compile Include="UI\CompletionList\Items\TextSelectItem.cs" />
+    <Compile Include="UI\Commands\Delete.cs" />
+    <Compile Include="UI\CompletionList\SimpleCompletionListBuilder.cs" />
+    <Compile Include="UI\CompletionList\VisibilityConditions.cs" />
+    <Compile Include="UI\TreeView\Relationships\INodeRelationship.cs" />
+    <Compile Include="UI\TreeView\Relationships\NodeRelationship.cs" />
+    <Compile Include="UI\TreeView\TreeViewLabelBlock.cs" />
+    <Compile Include="UI\TreeView\TreeViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TreeView\TreeViewNode.cs" />
+    <Compile Include="UI\TreeView\TreeViewNodeControl.cs" />
+    <Compile Include="UI\TreeView\TreeViewRootBlock.cs" />
+    <Compile Include="UI\TreeView\TreeViewRootControl.cs" />
+    <Compile Include="UI\UIManager.cs" />
+    <Compile Include="UI\ViewWindow\Redrawer.cs" />
+    <Compile Include="UI\ViewWindow\ViewWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Docs\BlocksAndControls.htm" />
+    <Content Include="Docs\Diagrams\ColorChart.png" />
+    <Content Include="Docs\Diagrams\ColorChartSorted.PNG" />
+    <Content Include="Docs\Diagrams\farben.png" />
+    <Content Include="Docs\docs.css" />
+    <Content Include="Docs\DocumentationGuidelines.htm" />
+    <Content Include="Docs\Functionality\CreatingBlocks.htm" />
+    <Content Include="Docs\Functionality\MouseInput.htm" />
+    <Content Include="Docs\Functionality\Styles.htm" />
+    <Content Include="Docs\index.htm" />
+    <Content Include="Docs\LibraProjectArchitecture.png" />
+    <Content Include="Docs\ProjectStructure.htm" />
+    <Content Include="UI\CompletionList\readme.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Canvas\Canvas.csproj">
+      <Project>{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}</Project>
+      <Name>Canvas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\Types\SetCaretPositionAction.cs" />
+    <Compile Include="Actions\Types\SetFocusAction.cs" />
+    <Compile Include="Blocks\Block.Serialization.cs" />
+    <Compile Include="Blocks\Container\Linear\LinearContainerBlock.DragDrop.cs" />
+    <Compile Include="Blocks\Container\Root\ActiveBlockChangedHandler.cs" />
+    <Compile Include="Blocks\Container\Root\RootBlock.Dragging.cs" />
+    <Compile Include="Blocks\Container\Root\RootBlock.Selection.cs" />
+    <Compile Include="Blocks\Text\DraggableTextLine.cs" />
+    <Compile Include="Clipboard\DragAndDrop\DragQuery.cs" />
+    <Compile Include="Clipboard\DragAndDrop\DragQueryResult.cs" />
+    <Compile Include="Clipboard\DragAndDrop\DragInfo.cs" />
+    <Compile Include="Clipboard\DragAndDrop\IPotentialDropTarget.cs" />
+    <Compile Include="UI\CompletionList\TextPictureInfo.cs" />
+    <None Include="Blocks\Blocks.Containers.cd" />
+    <None Include="Blocks\Container\ContainerBlock.cd" />
+    <None Include="Blocks\Blocks.cd" />
+    <None Include="Blocks\Blocks.Text.cd" />
+    <None Include="Blocks\Text\TextBlocks.cd" />
+    <None Include="Docs\Layout.cd">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="Lists\Lists.cd" />
+    <None Include="UI\CompletionList\CompletionFunctionality.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\CompletionList\CompletionList.resx">
+      <DependentUpon>CompletionList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

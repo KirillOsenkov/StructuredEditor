@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5054635-FD8C-43B9-941D-744E2CA00D11}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GuiLabs.Editor.CSharp</RootNamespace>
+    <AssemblyName>GuiLabs.Editor.CSharp</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GuiLabs.Undo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\GuiLabs.Undo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blocks\CodeUnitBlock.cs" />
+    <Compile Include="Blocks\Containers\CodeBlock.cs" />
+    <Compile Include="Blocks\Containers\CodeLineBlock.cs" />
+    <Compile Include="Blocks\Containers\ListBlock.cs" />
+    <Compile Include="Blocks\Containers\TextLikeCodeBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\ControlStructureBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\IControlStructure.cs" />
+    <Compile Include="Blocks\ControlStructures\UsingStatementBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\FinallyBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\CatchBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\DoBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\LockBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\ElseBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\ForBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\ForeachBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\IfBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\TryBlock.cs" />
+    <Compile Include="Blocks\ControlStructures\WhileBlock.cs" />
+    <Compile Include="Blocks\IClassOrStruct.cs" />
+    <Compile Include="Blocks\ICSharpBlock.cs" />
+    <Compile Include="Blocks\IHasName.cs" />
+    <Compile Include="Blocks\IHasType.cs" />
+    <Compile Include="Blocks\ITypeDeclaration.cs" />
+    <Compile Include="Blocks\Members\FieldBlock.cs" />
+    <Compile Include="Blocks\Method\MethodOrPropertyAccessor.cs" />
+    <Compile Include="Blocks\Modifiers\IHasModifiers.cs" />
+    <Compile Include="Blocks\Modifiers\TypeSelectionBlock.cs" />
+    <Compile Include="Blocks\Modifiers\Types\InterfaceModifierContainerBlock.cs" />
+    <Compile Include="Blocks\Namespace\Using\AddUsingAction.cs" />
+    <Compile Include="Blocks\Statement\BlockStatementBlock.cs" />
+    <Compile Include="Blocks\Text\Attributes\AttributeBlock.cs" />
+    <Compile Include="Blocks\Text\CodeLine.cs" />
+    <Compile Include="Blocks\Statement\IReparsable.cs" />
+    <Compile Include="Blocks\Statement\IStatement.cs" />
+    <Compile Include="Blocks\Statement\Kinds\BreakStatement.cs" />
+    <Compile Include="Blocks\Statement\Kinds\ContinueStatement.cs" />
+    <Compile Include="Blocks\Statement\Kinds\OneWordStatement.cs" />
+    <Compile Include="Blocks\Statement\StatementLine.cs" />
+    <Compile Include="Blocks\Text\Comments\CommentBlock.cs" />
+    <Compile Include="Blocks\Text\Comments\CommentLine.cs" />
+    <Compile Include="Blocks\Text\Comments\BaseCommentBlock.cs" />
+    <Compile Include="Blocks\Text\Comments\XmlCommentBlock.cs" />
+    <Compile Include="Blocks\Types\Delegate\DelegateBlock.cs" />
+    <Compile Include="Blocks\Types\EmptyBlocks\EmptyBlockItem.cs" />
+    <Compile Include="Blocks\Types\EmptyBlocks\ReplaceMemberEmptyBlockItem.cs" />
+    <Compile Include="Blocks\Types\EmptyBlocks\ReplaceTypeEmptyBlockItem.cs" />
+    <Compile Include="Blocks\Types\Interface\InterfaceAccessorsBlock.cs" />
+    <Compile Include="Blocks\Types\Interface\InterfaceBlock.cs" />
+    <Compile Include="Blocks\Method\ConstructorBlock.cs" />
+    <Compile Include="Blocks\Method\MethodBlock.cs" />
+    <Compile Include="Blocks\Method\Parameters\ParameterListBlock.cs" />
+    <Compile Include="Blocks\Modifiers\Actions\ClearModifierAction.cs" />
+    <Compile Include="Blocks\Modifiers\Actions\ModifierAction.cs" />
+    <Compile Include="Blocks\Modifiers\Actions\SetModifierAction.cs" />
+    <Compile Include="Blocks\Modifiers\CompletionListItem\ModifierVisibilityCondition.cs" />
+    <Compile Include="Blocks\Modifiers\CompletionListItem\SetModifierCompletionListItem.cs" />
+    <Compile Include="Blocks\Modifiers\ModifierBlockCollection.cs" />
+    <Compile Include="Blocks\Modifiers\ModifierContainer.cs" />
+    <Compile Include="Blocks\Modifiers\ModifierList\IModifierList.cs" />
+    <Compile Include="Blocks\Modifiers\ModifierList\ModifierList.cs" />
+    <Compile Include="Blocks\Modifiers\ModifierList\ModifierListFactory.cs" />
+    <Compile Include="Blocks\Modifiers\ModifierSelectionBlock.cs" />
+    <Compile Include="Blocks\Modifiers\ModifierSeparatorBlock.cs" />
+    <Compile Include="Blocks\Modifiers\Types\ClassModifierContainerBlock.cs" />
+    <Compile Include="Blocks\Modifiers\Types\ConstructorModifierContainerBlock.cs" />
+    <Compile Include="Blocks\Modifiers\Types\MemberModifierContainerBlock.cs" />
+    <Compile Include="Blocks\Modifiers\Types\TypeModifierContainerBlock.cs" />
+    <Compile Include="Blocks\Namespace\EmptyNamespaceBlock.cs" />
+    <Compile Include="Blocks\Namespace\NamespaceBlock.cs" />
+    <Compile Include="Blocks\Namespace\Using\UsingBlock.cs" />
+    <Compile Include="Blocks\Namespace\Using\UsingDirective.cs" />
+    <Compile Include="Blocks\Property\PropertyAccessorBlock.cs" />
+    <Compile Include="Blocks\Property\PropertyBlock.cs" />
+    <Compile Include="Blocks\Property\PropertyGetBlock.cs" />
+    <Compile Include="Blocks\Property\PropertySetBlock.cs" />
+    <Compile Include="Blocks\Text\NameBlock.cs" />
+    <Compile Include="Blocks\Text\Expression\ExpressionBlock.cs" />
+    <Compile Include="Blocks\Text\MemberNameBlock.cs" />
+    <Compile Include="Blocks\Text\TypeNameBlock.cs" />
+    <Compile Include="Blocks\Text\KeywordLabel.cs" />
+    <Compile Include="Blocks\Types\ClassBlock.cs" />
+    <Compile Include="Blocks\Types\ClassOrStructBlock.cs" />
+    <Compile Include="Blocks\Types\EmptyBlocks\TypeEmptyBlock.cs" />
+    <Compile Include="Blocks\Types\EmptyClassMember.cs" />
+    <Compile Include="Blocks\Types\Enum\EnumBlock.cs" />
+    <Compile Include="Blocks\Types\Enum\EnumValue.cs" />
+    <Compile Include="Blocks\Types\Interface\InterfaceMemberDeclarationBlock.cs" />
+    <Compile Include="Blocks\Types\Interface\InterfaceMemberTextBlock.cs" />
+    <Compile Include="Blocks\Types\Interface\InterfacePropertyAccessor.cs" />
+    <Compile Include="Blocks\Types\StructBlock.cs" />
+    <Compile Include="Grammar\Check.cs" />
+    <Compile Include="Grammar\ClassNavigator.cs" />
+    <Compile Include="Grammar\ClassType.cs" />
+    <Compile Include="Grammar\CompletionContext.cs" />
+    <Compile Include="Grammar\Containment\IMethodLevel.cs" />
+    <Compile Include="Grammar\Containment\IClassLevel.cs" />
+    <Compile Include="Grammar\Containment\INamespaceLevel.cs" />
+    <Compile Include="Grammar\Keywords.cs" />
+    <Compile Include="Grammar\RegExp.cs" />
+    <Compile Include="LanguageService\LanguageService.TypeList.cs" />
+    <Compile Include="LanguageService\DynamicHelpControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LanguageService\LanguageService.cs" />
+    <Compile Include="LanguageService\LocalVariable.cs" />
+    <Compile Include="LanguageService\Parameter.cs" />
+    <Compile Include="LanguageService\ParameterList.cs" />
+    <Compile Include="LanguageService\ParserService.cs" />
+    <Compile Include="LanguageService\ReflectionNamespaceManager.cs" />
+    <Compile Include="LanguageService\VariableDeclaration.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\HelpStrings\Help.cs" />
+    <Compile Include="Resources\PictureLibrary\Icons.cs" />
+    <Compile Include="Resources\PictureLibrary\PictureLibrary.cs" />
+    <Compile Include="Settings\OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Skins\CSharpStyleFactory.cs" />
+    <Compile Include="Skins\Styles.cs" />
+    <Compile Include="Visitors\BaseVisitor.cs" />
+    <Compile Include="Visitors\DefaultVisitor.cs" />
+    <Compile Include="Visitors\IVisitor.cs" />
+    <Compile Include="Visitors\PrettyPrinter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Canvas\Canvas.csproj">
+      <Project>{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}</Project>
+      <Name>Canvas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>GuiLabs.Editor.CSharp</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Blocks\Blocks.cd" />
+    <None Include="Blocks\Members\TypeMemberBlocks.cd" />
+    <None Include="Blocks\Statement\Statements.cd" />
+    <None Include="Blocks\Types\TypeDeclarationBlocks.cd" />
+    <None Include="Resources\minus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CodeSnippet.bmp" />
+    <Content Include="Resources\delete.gif" />
+    <Content Include="Resources\EventInternal.bmp" />
+    <Content Include="Resources\EventPrivate.bmp" />
+    <Content Include="Resources\EventProtected.bmp" />
+    <Content Include="Resources\EventPublic.bmp" />
+    <Content Include="Resources\FieldInternal.bmp" />
+    <Content Include="Resources\FieldPrivate.bmp" />
+    <Content Include="Resources\FieldProtected.bmp" />
+    <Content Include="Resources\FieldPublic.bmp" />
+    <Content Include="Resources\Keyword.bmp" />
+    <Content Include="Resources\MethodInternal.bmp" />
+    <Content Include="Resources\MethodPrivate.bmp" />
+    <Content Include="Resources\MethodProtected.bmp" />
+    <Content Include="Resources\MethodPublic.bmp" />
+    <Content Include="Resources\Namespace.bmp" />
+    <Content Include="Resources\Parameter.bmp" />
+    <Content Include="Resources\PropertyInternal.bmp" />
+    <Content Include="Resources\PropertyPrivate.bmp" />
+    <Content Include="Resources\PropertyProtected.bmp" />
+    <Content Include="Resources\PropertyPublic.bmp" />
+    <Content Include="Resources\TypeClass.bmp" />
+    <Content Include="Resources\TypeClassInternal.bmp" />
+    <Content Include="Resources\TypeClassPrivate.bmp" />
+    <Content Include="Resources\TypeClassProtected.bmp" />
+    <Content Include="Resources\TypeDelegate.bmp" />
+    <Content Include="Resources\TypeDelegateInternal.bmp" />
+    <Content Include="Resources\TypeDelegatePrivate.bmp" />
+    <Content Include="Resources\TypeDelegateProtected.bmp" />
+    <Content Include="Resources\TypeEnum.bmp" />
+    <Content Include="Resources\TypeEnumInternal.bmp" />
+    <Content Include="Resources\TypeEnumPrivate.bmp" />
+    <Content Include="Resources\TypeEnumProtected.bmp" />
+    <Content Include="Resources\TypeInterface.bmp" />
+    <Content Include="Resources\TypeInterfaceInternal.bmp" />
+    <Content Include="Resources\TypeInterfacePrivate.bmp" />
+    <Content Include="Resources\TypeInterfaceProtected.bmp" />
+    <Content Include="Resources\TypeStruct.bmp" />
+    <Content Include="Resources\TypeStructInternal.bmp" />
+    <Content Include="Resources\TypeStructPrivate.bmp" />
+    <Content Include="Resources\TypeStructProtected.bmp" />
+    <Content Include="Resources\Variable.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

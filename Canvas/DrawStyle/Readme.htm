@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Styles</title>
+    <link href="../../Core/Docs/docs.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>
+        Styles</h1>
+    <h2>
+        IBlockStyle</h2>
+    <p>
+        <span class="codeword">IBlockStyle</span> has 3 parts:</p>
+    <ul>
+        <li><span class="codeword">Name</span> (style name, used for identification)</li>
+        <li>3 Canvas objects (<span class="codeword">LineStyleInfo</span>, <span
+            class="codeword">FillStyleInfo</span>, <span class="codeword">FontStyleInfo</span>)</li>
+        <li>many shortcuts to some properties of <span class="codeword">LineStyleInfo</span>,
+            <span class="codeword">FillStyleInfo</span>, <span class="codeword">FontStyleInfo</span></li>
+    </ul>
+    <p>
+        We wanted to make the actual 3 Canvas objects <span class="codeword">private</span>,
+        to abstract the <span class="codeword">BlockStyle</span> clients from the <span class="codeword">
+            Canvas</span> library, but its clients (<span class="codeword">Layouts</span>)
+        seem to need <span class="codeword">LineStyleInfo</span> to draw on a <span class="codeword">
+            Renderer</span>.</p>
+    <p>
+        So another question now is: if the 3 <span class="codeword">Canvas</span>
+        objects are anyway public, do we need the shortcuts at all? For example, instead
+        of using a shortcut <span class="codeword">Style.LineWidth</span> we could directly
+        write <span class="codeword">Style.LineStyleInfo.Width</span>.</p>
+    <p>
+        Shortcuts are more flexible (what if we change the 3 <span class="codeword">Canvas</span>
+        objects?), and easier to use (see example above), but how big is the chance that
+        they will change?</p>
+    <h2>
+        BlockStyle</h2>
+    <p>
+        <span class="codeword">BlockStyle</span> implements <span class="codeword">IBlockStyle</span>.</p>
+    <h2>
+        StyleFactory</h2>
+    <p>
+        <span class="codeword">AddStyle</span> adds a style object to the internal hashtable,
+        <span class="codeword">GetStyle</span> retrieves a style by name or <span class="codeword">
+            null</span> in case name not found.</p>
+</body>
+</html>

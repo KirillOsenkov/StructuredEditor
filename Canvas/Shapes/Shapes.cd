@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Microsoft Sans Serif" Size="8.4" />
+  <Class Name="GuiLabs.Canvas.Shapes.Shape">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Shapes\Shape.cs</FileName>
+      <HashCode>AAgAASAEAIBABoEAQAAAAAAAANAIAAwIggAAEAAAAgA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Method Name="RaiseNeedRedraw" Hidden="true" />
+      <Method Name="RaiseSizeChanged" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+</ClassDiagram>

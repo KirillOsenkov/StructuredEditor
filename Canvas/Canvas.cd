@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Microsoft Sans Serif" Size="8.4" />
+  <Class Name="GuiLabs.Canvas.DrawWindow">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DrawWindow\DrawWindow.cs</FileName>
+      <HashCode>AAAAACAAACAAAEKBQACAAAAGgBAAGAABIJDAAAiCAwA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Renderer" />
+    </ShowAsAssociation>
+    <Members>
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="DrawWindow" Hidden="true" />
+      <Method Name="DrawWindow_Paint" Hidden="true" />
+      <Method Name="GetCursorPosition" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Method Name="IsInputKey" Hidden="true" />
+      <Method Name="OnClick" Hidden="true" />
+      <Method Name="OnDoubleClick" Hidden="true" />
+      <Method Name="OnMouseDown" Hidden="true" />
+      <Method Name="OnMouseHover" Hidden="true" />
+      <Method Name="OnMouseMove" Hidden="true" />
+      <Method Name="OnMouseUp" Hidden="true" />
+      <Method Name="OnMouseWheel" Hidden="true" />
+      <Method Name="OnResize" Hidden="true" />
+      <Method Name="PrepareMouseArgs" Hidden="true" />
+      <Method Name="Redraw" Hidden="true" />
+      <Method Name="WrapMouseEventArgs" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Renderer" Type="GuiLabs.Canvas.Renderer.IRenderer" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="1.125" />
+        <Point X="3" Y="1.125" />
+      </Path>
+    </AssociationLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="GuiLabs.Canvas.Renderer.IRenderer">
+    <Position X="3" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Renderer\IRenderer.cs</FileName>
+      <HashCode>gAAAAAAAAAAAAAAAAQAAAAAAAAgAAAAAAAAAAABBAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DrawOperations" />
+    </ShowAsAssociation>
+    <AssociationLine Name="DrawOperations" Type="GuiLabs.Canvas.DrawOperations.IDrawOperations" FixedToPoint="true">
+      <Path>
+        <Point X="3.688" Y="2.258" />
+        <Point X="3.688" Y="3" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.165" Y="0.302" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Interface>
+  <Interface Name="GuiLabs.Canvas.DrawOperations.IDrawOperations">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DrawOperations\IDrawOperations.cs</FileName>
+      <HashCode>gAAARABQABAAAgAAKAAAAAAAAAAAAAABAEAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Factory" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="GuiLabs.Canvas.DrawStyle.IDrawInfoFactory">
+    <Position X="5.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>DrawStyle\Factory\IDrawInfoFactory.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAACQAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

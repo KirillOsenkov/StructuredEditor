@@ -1,0 +1,81 @@
+XMLEditBlock
+		protected override void InitStyle()
+		{
+			Style.LineColor = System.Drawing.Color.DarkGray;
+			Style.FillColor = System.Drawing.Color.Beige;
+		}
+
+		protected override void InitSelectedStyle()
+		{
+			SelectedStyle.LineColor = System.Drawing.Color.LightSteelBlue;
+			SelectedStyle.FillColor = System.Drawing.Color.AliceBlue;
+		}
+
+SingleLineXMLBlock
+		protected override void InitSelectedStyle()
+		{
+			SelectedStyle.LineColor = System.Drawing.Color.Black;
+			SelectedStyle.FillColor = System.Drawing.Color.AliceBlue;
+		}
+
+		protected override void InitStyle()
+		{
+			Style.LineColor = System.Drawing.Color.LightGray;
+			Style.FillColor = System.Drawing.Color.White;
+		}
+		
+XMLComment
+		protected override void InitStyle()
+		{
+			Style.LineColor = System.Drawing.Color.LightGray;
+			Style.FillColor = System.Drawing.Color.Ivory;
+		}
+
+XMLContent
+		protected override void InitStyle()
+		{
+			Style.LineColor = System.Drawing.Color.Black;
+			Style.FillColor = System.Drawing.Color.White;
+		}
+
+XMLBlockProperty
+		protected override void InitStyle()
+		{
+			Style.LineColor = System.Drawing.Color.Black;
+			Style.FillColor = System.Drawing.Color.White;
+
+		}
+
+XMLContainerBlock
+		protected override void InitStyle()
+		{
+			Style.LineColor = System.Drawing.Color.LightGray;
+			Style.FillColor = System.Drawing.Color.White;
+		}
+
+		protected override void InitSelectedStyle()
+		{
+			SelectedStyle.LineColor = System.Drawing.Color.Black;
+			SelectedStyle.FillColor = System.Drawing.Color.AliceBlue;
+		}
+
+XMLDeleteBlock
+		protected override void InitStyle()
+		{
+			Style.LineColor = System.Drawing.Color.Red;
+			Style.FillColor = System.Drawing.Color.Yellow;
+		}
+		
+EmptyXMLBlockProperty
+		protected override void InitStyle()
+		{
+			Style.LineColor = System.Drawing.Color.LightGray;
+			Style.FillColor = System.Drawing.Color.WhiteSmoke;
+		}
+
+EmptyXMLBlock
+		protected override void InitStyle()
+		{
+			Style.LineColor = System.Drawing.Color.LightGray;
+			Style.FillColor = System.Drawing.Color.WhiteSmoke;
+		}

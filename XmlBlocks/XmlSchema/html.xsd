@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema 
+	attributeFormDefault="unqualified" 
+	elementFormDefault="qualified" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="html">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="head" type="Thead"/>
+				<xs:element name="body" type="Tdiv"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="Thead">
+		<xs:sequence>
+			<xs:element name="title" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Tdiv" mixed="true">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:choice>
+				<xs:element name="p" type="Tdiv" />
+				<xs:element name="div" type="Tdiv" />
+				<xs:element name="h1" type="xs:string" />
+				<xs:element name="h2" type="xs:string" />
+				<xs:element name="h3" type="xs:string" />
+				<xs:element name="h4" type="xs:string" />
+				<xs:element name="h5" type="xs:string" />
+				<xs:element name="h6" type="xs:string" />
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
+
+<!--<?xml version='1.0'?>
+<schema>
+	-->
+<!--xmlns='http://www.w3.org/2001/XMLSchema'
+	targetNamespace='http://www.w3.org/2001/xhtml'
+	xmlns:t='http://www.w3.org/2001/xhtml'>-->
+<!--
+
+	<element name='htmlRoot' type='html'/>
+
+	<complexType name ='html'>
+		<sequence>
+			<element type='head'/>
+			<element type='body'/>
+		</sequence>
+	</complexType>
+
+	<complexType name ='head'>
+		<sequence>
+			<element type='title'/>
+		</sequence>
+	</complexType>
+
+	<complexType name='title'>
+	</complexType>
+
+	<complexType name='body'>
+		<choice minOccurs='0' maxOccurs='unbounded'>
+			<element ref="t:block"/>
+		</choice>
+	</complexType>
+
+	<complexType name="commonAttrs">
+		<attribute name="id" type="ID" use="optional"/>
+		<attribute name="class" use="optional"/>
+		-->
+<!-- @@type: list of classname-->
+<!--
+		<attribute name="style" use="optional"/>
+		-->
+<!-- hmm... css:style? -->
+<!--
+		<anyAttribute namespace="##other"
+			  processContents="strict"/>
+	</complexType>
+
+	<complexType name="blockType">
+		<sequence minOccurs='0' maxOccurs='unbounded'>
+			<choice>
+				<element ref='t:a'/>
+				<element ref='t:img'/>
+			</choice>
+		</sequence>
+	</complexType>
+
+	<element name="block" abstract="true"/>
+
+	<element name='h1'
+		 type="t:blockType"/>
+
+	<element name='h2'
+		 type="t:blockType"/>
+
+	<element name='h3'
+		 type="t:blockType"/>
+
+	<element name="hr">
+		<complexType/>
+	</element>
+
+	<element name='p'
+		 type="t:blockType"/>
+
+	<element name='address'
+		 type="t:blockType"/>
+
+
+	<element name='a'>
+		<complexType>
+			<attribute name='href' type='string' use='optional'/>
+			<attribute name='name' type='NMTOKENS' use='optional'/>
+		</complexType>
+	</element>
+
+	<element name='img'>
+		<complexType>
+			<attribute name='src' type='string' use='required'/>
+		</complexType>
+	</element>
+</schema>-->

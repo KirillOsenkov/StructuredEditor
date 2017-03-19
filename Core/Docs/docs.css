@@ -1,0 +1,87 @@
+body
+{
+}
+P,td,li
+{
+	font-family: Verdana, sans-serif;
+	font-size: 10pt;
+	margin: 6px 0px 12px;
+	line-height: 130%;
+}
+h1
+{
+	font-family: Arial, sans-serif;
+	font-size: 20pt;
+	border-bottom: #669999 1px solid;
+}
+h2 
+{
+	font-family: Verdana, sans-serif;
+	font-size: 12pt;
+	color: #666666;
+	background-color: #F0FAFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #DBE4EE;
+	border-right-color: #DBE4EE;
+	border-bottom-color: #DBE4EE;
+	border-left-color: #DBE4EE;
+}
+h3 
+{
+	font-family: Verdana, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #0099CC;
+}
+.code
+{
+	font-family: "Courier New" , Courier;
+	font-size: 11pt;
+	margin: 18px;
+	white-space: pre;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: dotted;
+	border-right-style: none;
+	border-bottom-style: dotted;
+	border-left-style: solid;
+	border-top-color: #DBE4EE;
+	border-right-color: #DBE4EE;
+	border-bottom-color: #DBE4EE;
+	border-left-color: #DBE4EE;
+	padding: 12px;
+	line-height: 130%;
+}
+.note 
+{
+	font-size: 9pt;
+	background-color: #FFFFF0;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #E0E0DD;
+	border-right-color: #E0E0DD;
+	border-bottom-color: #E0E0DD;
+	border-left-color: #E0E0DD;
+	margin-left: 32px;
+}
+.codeword 
+{
+	font-family: "Courier New", Courier;
+	font-size: 11pt;
+	color: #404090;
+}

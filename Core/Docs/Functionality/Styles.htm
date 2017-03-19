@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tutorial: Styles and skins</title>
+    <link href="../docs.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<p>
+Styles in Canvas:
+Button
+Control
+RectShape
+TextBox
+
+Styles in Core:
+
+</p>
+	<h1>
+		Adding skins for blocks in your project</h1>
+	<p>
+		Imagine you have an editor project, that uses Core.</p>
+	<p>
+		You can add styles for any of your controls and any of your blocks. However, styles
+		of your Controls are not skinnable. Only styles of Blocks <strong>are</strong> skinnable.</p>
+	<h2>
+		1.
+		How to add skins for blocks in your project</h2>
+	<p>
+		In your project, for example, HTMLEditor, create a folder called Skins and create
+		a class there, which inherits from GuiLabs.Canvas.DrawStyle.StyleFactory.</p>
+	<p>
+		In constructor, create necessary styles, give them style names and add
+		them to the skin using the Add() method. For example:</p>
+	<pre class="code">using GuiLabs.Canvas.DrawStyle;
+
+namespace GuiLabs.Editor.HTML.Skins
+{
+	public class HTMLStyleFactory : StyleFactory
+	{
+		public HTMLStyleFactory()
+		{
+			AddStyle("GuiLabs.Editor.HTML.HTMLMetaBlock", Color.Honeydew);
+
+			AddStyle("GuiLabs.Editor.HTML.HTMLMetaBlock_selected", Color.GreenYellow, Color.LightGreen, Color.White, FillMode.HorizontalGradient);
+
+			AddStyle("GuiLabs.Editor.HTML.HTMLBaseBlock", Color.LightGray, Color.WhiteSmoke);
+
+			AddStyle("GuiLabs.Editor.HTML.HTMLBaseBlock_selected", Color.LightGray);
+		} 
+	} 
+}</pre>
+<p>
+	You can declare multiple classes in the Skins folder (HTMLStyleFactory2, HTMLStyleFactory3).
+	Each of these can add different
+	styles for the same strings (in our example, all skins must add four styles with following names: <strong>
+		GuiLabs.Editor.HTML.HTMLMetaBlock</strong>, <strong>GuiLabs.Editor.HTML.HTMLMetaBlock_selected</strong> etc.).</p>
+	<h2>
+		2. How to switch current skin</h2>
+	<p>
+		In the constructor of your main root block (for example, HTMLRootBlock), write the following:</p>
+	<pre class="code">
+Block.CurrentSkin = new Skins.HTMLStyleFactory();</pre>
+	<p>
+		Here you can select which skin will be used when new blocks are created. As we currently
+		only have one skin, don't worry about this step.</p>
+	<h2>
+		3. How to give your block a new style</h2>
+	<p>
+		For example, you want to give the styles defined above to the HTMLMetaBlock. Go
+		to HTMLMetaBlock.cs and do the following:</p>
+	<p>
+		3.1. Override StyleName and SelectedStyleName to return names of styles that you
+		want:</p>
+	<pre class="code">protected override string StyleName()
+{
+	return "GuiLabs.Editor.HTML.HTMLMetaBlock";
+}
+
+protected override string SelectedStyleName()
+{
+	return "GuiLabs.Editor.HTML.HTMLMetaBlock_selected";
+}</pre>
+	<p>
+		You gave the strings GuiLabs.Editor.HTML.HTMLMetaBlock and GuiLabs.Editor.HTML.HTMLMetaBlock_selected to the new styles when you created a
+		new skin in step 1.</p>
+	<p>
+		3.2. In a blocks constructor, right after you initialize your control, call InitStyle().</p>
+	<p class="note">
+		Don't forget to call InitStyle() <strong>after</strong> the control already exists, otherwise there
+		will be a null reference exception (the block will try to say "this.MyControl.Style
+		= MyNewSuperStyle", but MyControl == null!)</p>
+		<p>
+			<strong>It is important:</strong> you only have to call InitStyle, if you initialize
+			the control. For example, if you say MyControl = new SuperUltraControl(); then you
+			have to call InitStyle() right after that.</p>
+	<p>
+		Otherwise, if the control is already defined in a base class, you don't need to
+		call InitStyle() once again. For example, EmptyBlock defines it's control (TextBox)
+		in Core library. We already call InitStyle() in Core, so you don't need to do it
+		again in blocks, which inherit from EmptyBlock.</p>
+</body>
+</html>

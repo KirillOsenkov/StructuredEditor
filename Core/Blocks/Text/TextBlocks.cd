@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.4" />
+  <Class Name="GuiLabs.Editor.Blocks.LabelBlock" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\LabelBlock.cs</FileName>
+      <HashCode>AAAABAAgAAkAQAAEAJAABAAAAAAAAAAAAAUACAAABAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.TextBoxBlock" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\TextBoxBlock.cs</FileName>
+      <HashCode>gAEIICCgAJEEQAAEAJAABEIIAAIAAQSYAAWACAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.TextBoxBlockWithCompletion" Collapsed="true">
+    <Position X="2.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\TextBoxBlockWithCompletion.cs</FileName>
+      <HashCode>AgAAAAAAAAAACAAAABAAAAICAAAAAAAAIAACgAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.TextLine" Collapsed="true">
+    <Position X="2.75" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\TextLine.cs</FileName>
+      <HashCode>AAAAIAAAAJAEAAAAAAAAAAAAAgAAAQSaACECAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.FocusableLabelBlock" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\FocusableLabelBlock.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.TextSelectionBlock" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Text\SelectionLabelBlock.cs</FileName>
+      <HashCode>AgAAACAAEAAACAYAAYAAAAAiAAIAAAABIAECgAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.Blocks.EmptyBlock" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Empty\EmptyBlock.cs</FileName>
+      <HashCode>AAAAAAAgAAAAAAAAABAAAABAAAIAAAAAAAEAAAgAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

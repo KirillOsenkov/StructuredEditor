@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="docs.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>
+        Blocks</h1>
+    <h2>
+        Block</h2>
+    <p>
+        The data structure of an editor consists of blocks. Each block implements interface
+        <span class="codeword">Core\Blocks\IBlock.cs</span> and inherits from class <span
+            class="codeword">Core\Blocks\Block.cs</span>.</p>
+    <h2>
+        Block with children blocks (ContainerBlock)</h2>
+    <p>
+        If a block inherits from <span class="codeword">Core\Blocks\Container\ContainerBlock.cs</span>,
+        it can contain other blocks. It has a collection Children (of type <span class="codeword">
+            Core\Lists\ChildrenList.cs</span>). Each block has a link to its Parent ChildrenList.</p>
+    <h2>
+        RootBlock</h2>
+    <p>
+        A RootBlock (<span class="codeword">Core\Blocks\Container\Root\RootBlock.cs</span>)
+        is a special ContainerBlock, which is the "top" block. A RootBlock doesn't have
+        a parent (RootBlock.Parent == null). If you want to create your new editor,
+        you need to inherit YourEditorRootBlock from RootBlock.</p>
+    <h1>
+        Controls</h1>
+    <h2>
+        Control</h2>
+    <p>
+        A control is a visual shape which can be drawn on a DrawWindow. It has a Bounds
+        rectangle, color, etc. Each control class inherits from <span class="codeword">Controls\Control.cs</span>
+        and implements <span class="codeword">Controls\IControl.cs</span>.</p>
+    <p>
+        If a control inherits from <span class="codeword">Controls\Containers\ContainerControl.cs</span>,
+        it can contain other controls. There are two types of container controls:</p>
+    <h2>
+        1. ContainerControl</h2>
+    <p>
+        Those who directly inherit from ContainerControl. Each such control can display
+        an already existing collection of controls in it. The only way to add or remove
+        controls to ContainerControl is to modify the displayed collection of controls.</p>
+    <p>
+        Each ContainerControl receives a reference to a "foreign" collection of controls
+        when it is created (in constructor). ContainerControl displays this "foreign" collection,
+        that comes from outside. Example: <span class="codeword">Controls\Containers\Aligned\ListControl.cs</span>:</p>
+    <pre class="code"><span style="color: #0000ff">public</span> ListControl (<span style="color: #009999">ICollectionWithEvents&lt;IControl&gt;</span> bindToCollection, <span
+        style="color: #009999">ILayout</span> layoutStrategy) : base()
+{
+	List.Children = bindToCollection;
+	MyLayout = layoutStrategy;
+	Layout();
+}</pre>
+    <p>
+        Here, bindToCollection is a collection of controls to be displayed in this ListControl.
+        When a collection is changed, this ListControl is updated automatically. That's
+        why bindToCollection is not a simple collection, but a CollectionWithEvents - it
+        raises events when it is changed, and ListControl handles these events by redrawing
+        itself.</p>
+    <h3>
+        Using ContainerControl</h3>
+    <p>
+        ContainerControl is good to use, when we need to display some variable collection
+        of similar controls (that can grow). It updates itself automatically. In most cases,
+        Layout (alignment) of elements is simple - horizontal or vertical. For both cases,
+        we have <span class="codeword">Controls\Containers\Alighed\ListControl.cs</span>.</p>
+    <p class="note">
+        Note: earlier, we had HorizontalListControl and VerticalListControl, but now they
+        are both replaced by ListControl, which receives a layout algorithm in parameter
+        of constructor (see code above). So, use ListControl instead.</p>
+    <p>
+        Example:</p>
+    <p><img alt="LinearContainerBlock" src="LinearContainerBlock.png"/></p>
+    <p>
+        See <span class="codeword">Core\Blocks\Container\Aligned\LinearContainerBlock.cs</span>.
+        LinearContainerBlock is a base class to display a variable-size collection of similar
+        blocks (such as classes in a namespace, etc). It has a reference to a ListControl,
+        which displays a collection of blocks. It is initialized like this:</p>
+    <pre class="code"><span style="color: #0000ff">protected virtual void</span> InitControl(<span style="color: #009999">ILayout</span> defaultLayout)
+{
+	mMyListControl = <span style="color: #0000ff">new</span> ListControl(<span style="color: #0000ff">this</span>.Children.Controls, defaultLayout);
+}</pre>
+<p>
+    Here, we see that this points to a LinearContainerBlock, this.Children points to
+    a list of children blocks and this.Children.Controls points to a list of controls
+    of children blocks. defaultLayout is a layout strategy to use (Horizontal or Vertical).</p>
+    <h2>
+        2. CompositeControl</h2>
+    <p>
+        Second type of container controls is a control, that has its own collection of controls.
+        Normally, this is a fixed-size collection of two or three well-known controls, like
+        in a namespace: a Label for the word "namespace", a TextBox for the name of the
+        namespace and a ListControl for the collection of namespace members.</p>
+    <p>
+        In this case, you just add children controls to the CompositeControl and call Layout()
+        to position them inside the parent CompositeControl. See <span class="codeword">CSharpBlocks\NamespaceMembers\ContainerWithKeywordControl.cs</span> for an example.</p>
+</body>
+</html>

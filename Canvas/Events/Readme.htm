@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+        <link href="..\..\Core\Docs\docs.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+        <p>IMouseHandler receives mouse events.</p>
+        <p>IMouseEvents sends mouse events.</p>
+        <h1>
+            DefaultMouseHandler</h1>
+        <p>
+            Imagine you have an object, which supports IMouseHandler. It has a property DefaultMouseHandler
+            - a reference to another such object.</p>
+        <p>
+            If DefaultMouseHandler in our object is unequal to null, all calls to OnMouseX on
+            this object will be redirected to its DefaultMouseHandler.</p>
+        <h3>
+            Note:</h3>
+        <p>
+            If DefaultMouseHandler == null || DefaultMouseHandler == this, no redirection is
+            carried out (or else we'd have a NullReferenceException or an endless loop of DefaultMouseHandler
+            redirecting calls to itself).</p>
+	</body>
+</html>

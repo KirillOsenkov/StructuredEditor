@@ -1,0 +1,127 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canvas", "Canvas\Canvas.csproj", "{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpEditor", "CSharpEditor\CSharpEditor.csproj", "{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpBlocks", "CSharpBlocks\CSharpBlocks.csproj", "{D5054635-FD8C-43B9-941D-744E2CA00D11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Controls\Controls.csproj", "{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs10
+		SccProjectUniqueName0 = Canvas\\Canvas.csproj
+		SccProjectName0 = Canvas
+		SccAuxPath0 = https://tfs.codeplex.com/tfs/tfs10
+		SccLocalPath0 = Canvas
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Core\\Core.csproj
+		SccProjectName1 = Core
+		SccAuxPath1 = https://tfs.codeplex.com/tfs/tfs10
+		SccLocalPath1 = Core
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = CSharpEditor\\CSharpEditor.csproj
+		SccProjectName2 = CSharpEditor
+		SccAuxPath2 = https://tfs.codeplex.com/tfs/tfs10
+		SccLocalPath2 = CSharpEditor
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = CSharpBlocks\\CSharpBlocks.csproj
+		SccProjectName3 = CSharpBlocks
+		SccAuxPath3 = https://tfs.codeplex.com/tfs/tfs10
+		SccLocalPath3 = CSharpBlocks
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = Controls\\Controls.csproj
+		SccProjectName4 = Controls
+		SccAuxPath4 = https://tfs.codeplex.com/tfs/tfs10
+		SccLocalPath4 = Controls
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName5 = Utils\\Utils.csproj
+		SccProjectName5 = Utils
+		SccAuxPath5 = https://tfs.codeplex.com/tfs/tfs10
+		SccLocalPath5 = Utils
+		SccProvider5 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Release|.NET.ActiveCfg = Release|Any CPU
+		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Release|.NET.ActiveCfg = Release|Any CPU
+		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Release|.NET.ActiveCfg = Release|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Release|.NET.ActiveCfg = Release|Any CPU
+		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}.Release|.NET.ActiveCfg = Release|Any CPU
+		{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}.Release|.NET.ActiveCfg = Release|Any CPU
+		{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TextTemplating) = postSolution
+		TextTemplating = 1
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,56 @@
+﻿<html>
+<head>
+    <title>Scrolling</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="../../../Core/Docs/docs.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1>
+        Scrolling</h1>
+    <h2>
+        Basic class diagram</h2>
+    <p>
+        <img src="ScrollingScheme.png" width="720" height="606"></p>
+    <h2>
+        Main classes</h2>
+    <ul>
+        <li>ScrollableShape</li>
+        <li>Scrollbar</li>
+        <li>ShapeWithScrollbar</li>
+    </ul>
+    <h2>
+        Possible events:</h2>
+    <h3>
+        1. Content size changed</h3>
+    <p>
+        Happens when the user changes the content (add / remove blocks, etc.)</p>
+    <h3>
+        2. ShapeWithScrollbar size changed</h3>
+    <p>
+        Happens when user resizes the physical window.</p>
+    <h3>
+        3. Scrollbar scrolled</h3>
+    <p>
+        Happens when user scrolls the scrollbar.</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <h2>
+        Mapping proportional positions of the scrollbar</h2>
+    <h3>
+        Range</h3>
+    <p>
+        We call the following data structure a <i>scrolling range</i>:</p>
+    <ul>
+        <li>Pos</li>
+        <li>Size</li>
+        <li>ThumbPos</li>
+        <li>ThumbSize</li>
+    </ul>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+</body>
+</html>

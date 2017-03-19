@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>Mouse Events</title>
+    <link href="..\docs.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>
+        Mouse Input</h1>
+    <h2>
+        Canvas\DrawWindow\DrawWindow.cs</h2>
+    <p>
+        We override standard OnMouseDown of the control and redirect the OnMouseDown to
+        the DefaultMouseHandler:</p>
+    <pre class="code"><span style="color: #0000ff">protected override void</span> OnMouseDown(MouseEventArgs e)
+{
+	<span style="color: #0000ff">base</span>.OnMouseDown(e);
+	OnMouseDown(WrapMouseEventArgs(e));
+}
+
+<span style="color: #009966">// Difference is in Parameter: MouseEventArgsWithKeys
+</span><span
+    style="color: blue">public virtual void</span> OnMouseDown(MouseEventArgsWithKeys e)
+{
+	<span style="color: #0000ff">if</span> (DefaultMouseHandler != <span style="color: #0000ff">null</span>) 
+	{
+		DefaultMouseHandler.OnMouseDown(e);
+	}
+}
+</pre>
+<p>
+    DefaultMouseHandler is an object, that currently receives all mouse events. Setting
+    DefaultMouseHandler to another objects simply switches the receiver. This is an
+    example of the "Chain of responsibility" design pattern.</p>
+    <h2>
+        Core\UI\ViewWindow.cs</h2>
+    <p>
+        ViewWindow inherits from DrawWindow. We only need to set DefaultMouseHandler to
+        redirect all mouse events to the mMainShape (main container, which is displayed
+        in a window):</p>
+    <pre class="code">this.DefaultMouseHandler = mMainShape;</pre>
+    <p>
+        ViewWindow knows about an IRootBlock it should display in itself.
+
+	MainShape is a
+        wrapper for IRootBlock, which adds scrollbars to it.</p>
+    <h2>
+        CSharpEditor\EditorForm.cs</h2>
+    <p>
+        In the client editor, ViewWindow control is contained within the main form.</p>
+    <p>
+        We only set ViewWindow.RootBlock = ... to determine, what RootBlock should
+        be displayed
+        in this window.</p>
+</body>
+</html>

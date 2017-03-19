@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{642F5C4C-4811-43F8-8B4E-1E06BD93CD71}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GuiLabs.Controls</RootNamespace>
+    <AssemblyName>GuiLabs.Canvas.Controls</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GuiLabs.Undo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\GuiLabs.Undo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Button\Button.cs" />
+    <Compile Include="Button\DeleteButton.cs" />
+    <Compile Include="Containers\Linear\HContainerControl.cs" />
+    <Compile Include="Containers\Linear\LinearContainerControl.cs" />
+    <Compile Include="Containers\ContainerControl.cs" />
+    <Compile Include="Containers\Layouts\ILayout.cs" />
+    <Compile Include="Containers\Layouts\ILinearLayout.cs" />
+    <Compile Include="Containers\Layouts\Layouter.cs" />
+    <Compile Include="Containers\Layouts\LayoutFactory.cs" />
+    <Compile Include="Containers\Layouts\LinearLayout.cs" />
+    <Compile Include="Containers\Root\DisplayCompletionListHandler.cs" />
+    <Compile Include="Containers\Root\RedrawAccumulator.cs" />
+    <Compile Include="Containers\Root\RootControl.cs" />
+    <Compile Include="Containers\Universal\UniversalControl.cs" />
+    <Compile Include="Containers\Universal\UniversalControl.Draw.cs" />
+    <Compile Include="Control.cs" />
+    <Compile Include="Control.Focus.cs" />
+    <Compile Include="Figures\RectShape.cs" />
+    <Compile Include="Label\Label.cs" />
+    <Compile Include="PictureBox\CollapsePicture.cs" />
+    <Compile Include="PictureBox\PictureChangeBox.cs" />
+    <Compile Include="PictureBox\PictureBox.cs" />
+    <Compile Include="PictureLibrary\PictureLibrary.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Scrollbar\Controls\ArrowButton.cs" />
+    <Compile Include="Scrollbar\Controls\ArrowButtonStyle.cs" />
+    <Compile Include="Scrollbar\Controls\ScrollbarButton.cs" />
+    <Compile Include="Scrollbar\Controls\ScrollbarButtonStyle.cs" />
+    <Compile Include="Scrollbar\Events\ButtonPushedHandler.cs" />
+    <Compile Include="Scrollbar\Events\ScrolledHandler.cs" />
+    <Compile Include="Scrollbar\Events\ScrollToHandler.cs" />
+    <Compile Include="Scrollbar\HScrollbar.cs" />
+    <Compile Include="Scrollbar\IScrollable.cs" />
+    <Compile Include="Scrollbar\IScrollableContainer.cs" />
+    <Compile Include="Scrollbar\NumberRange\ChildNumberRange.cs" />
+    <Compile Include="Scrollbar\NumberRange\CompositeDoubleRange.cs" />
+    <Compile Include="Scrollbar\NumberRange\CompositeNumberRange.cs" />
+    <Compile Include="Scrollbar\NumberRange\INumberRange.cs" />
+    <Compile Include="Scrollbar\NumberRange\NumberRange.cs" />
+    <Compile Include="Scrollbar\ScrollableContainer.cs" />
+    <Compile Include="Scrollbar\Scrollbar.cs" />
+    <Compile Include="Scrollbar\ScrollbarFactory.cs" />
+    <Compile Include="Scrollbar\ShapeWithScrollbar.cs" />
+    <Compile Include="Scrollbar\VScrollbar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Text\ITextProvider.cs" />
+    <Compile Include="Text\TextBox.Actions.cs" />
+    <Compile Include="Text\IHasText.cs" />
+    <Compile Include="Text\ITextControl.cs" />
+    <Compile Include="Text\TextBox.Change.cs" />
+    <Compile Include="Text\TextBox.CharFilter.cs" />
+    <Compile Include="Text\TextBox.Clipboard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\TextBox.cs" />
+    <Compile Include="Text\TextBox.Draw.cs" />
+    <Compile Include="Text\TextBox.Events.Keyboard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\TextBox.Events.Mouse.cs" />
+    <Compile Include="Text\TextBox.Lexer.cs" />
+    <Compile Include="Text\TextBox.Operations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\TextBox.Selection.cs" />
+    <Compile Include="Text\TextBox.Text.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\TextBox.UserInput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\TextChangedHandler.cs" />
+    <Compile Include="Utils\ActivatedHandler.cs" />
+    <Compile Include="Utils\KeyboardBrakeSystem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Canvas\Canvas.csproj">
+      <Project>{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}</Project>
+      <Name>Canvas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{FEAB4904-F71C-4974-B6A4-1AA5B451AD1B}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.gif" />
+    <None Include="Resources\plus.gif" />
+    <Content Include="Resources\Copy.bmp" />
+    <Content Include="Resources\F1.bmp" />
+    <Content Include="Resources\MenuDelete.bmp" />
+    <Content Include="Resources\collapsed.png" />
+    <Content Include="Resources\delete.gif" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\delete2.png" />
+    <Content Include="Resources\notcollapsed.png" />
+    <Content Include="Resources\Paste.bmp" />
+    <Content Include="Scrollbar\readme.htm" />
+    <Content Include="Scrollbar\ScrollingScheme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Containers\ContainerControl.Draw.cs" />
+    <Compile Include="Containers\ContainerControl.HitTest.cs" />
+    <Compile Include="Containers\ContainerControl.OnMouseEvents.cs" />
+    <Compile Include="Containers\ContainerControl.Layout.cs" />
+    <Compile Include="Containers\Root\RootControl.Draw.cs" />
+    <Compile Include="Containers\Root\RootControl.Focus.cs" />
+    <Compile Include="Containers\Root\RootControl.Layout.cs" />
+    <Compile Include="Containers\Root\RootControl.OnEvents.cs" />
+    <Compile Include="Control.Draw.cs" />
+    <Compile Include="Control.Stretch.cs" />
+    <Compile Include="Control.Style.cs" />
+    <Compile Include="Control.Collapse.cs" />
+    <Compile Include="Control.Visibility.cs" />
+    <None Include="Controls.cd">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="Scrollbar\ShapeWithScrollbar.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>GuiLabs.Canvas.Controls</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Microsoft Sans Serif" Size="8.4" />
+  <Class Name="GuiLabs.Editor.CSharp.FieldBlock" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Members\FieldBlock.cs</FileName>
+      <HashCode>wgBAZAAAAABAgAQgQIAAAMwBgAAAAAACACESAAABAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.MethodBlock" Collapsed="true">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Method\MethodBlock.cs</FileName>
+      <HashCode>gABABAgAAAAAgAAgQBgAAAQBAAAAAEACAKESAAADAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.MethodOrPropertyAccessor" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Blocks\Method\MethodOrPropertyAccessor.cs</FileName>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAACAAAACAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.ConstructorBlock" Collapsed="true">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Method\ConstructorBlock.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAgAAAAAAQBAACAAAACAAACAAAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.PropertyBlock" Collapsed="true">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Property\PropertyBlock.cs</FileName>
+      <HashCode>gABABIgAACAAgAAgwAAAAEQBCAAAAEQCAAEaAAABCAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GetAccessor" />
+      <Property Name="SetAccessor" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="GetAccessor" Type="GuiLabs.Editor.CSharp.PropertyGetBlock">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-4.165" Y="0.419" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="SetAccessor" Type="GuiLabs.Editor.CSharp.PropertySetBlock">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.848" Y="0.593" Height="0.16" Width="1.087" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.PropertyAccessorBlock" Collapsed="true">
+    <Position X="3.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Blocks\Property\PropertyAccessorBlock.cs</FileName>
+      <HashCode>AAAAAQgAAAAAAAAgBAAAAABAEAMAAQAAAAECAAAICgA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.PropertyGetBlock" Collapsed="true">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Property\PropertyGetBlock.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.PropertySetBlock" Collapsed="true">
+    <Position X="4.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Property\PropertySetBlock.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAIAAAAAAIACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GuiLabs.Editor.CSharp.CodeBlock" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Blocks\Containers\CodeBlock.cs</FileName>
+      <HashCode>AgAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+</ClassDiagram>
