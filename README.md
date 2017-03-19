@@ -15,3 +15,5 @@ http://osenkov.com/diplom/
 
 Thesis PDF:
 http://osenkov.com/diplom/KirillOsenkovDiplom.pdf
+
+The source code was originally published at: [http://structurededitor.codeplex.com](http://structurededitor.codeplex.com)
