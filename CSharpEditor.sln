@@ -2,11 +2,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpEditor", "CSharpEditor\CSharpEditor.csproj", "{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canvas", "Canvas\Canvas.csproj", "{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpEditor", "CSharpEditor\CSharpEditor.csproj", "{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpBlocks", "CSharpBlocks\CSharpBlocks.csproj", "{D5054635-FD8C-43B9-941D-744E2CA00D11}"
 EndProject
@@ -20,6 +20,10 @@ Global
 		Release|Mixed Platforms = Release|Mixed Platforms
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{A78F386A-C679-4FBB-A93C-BF9F5A93AC4B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
@@ -28,10 +32,6 @@ Global
 		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{1FAB95A0-9DAB-4DCB-AB5E-5017C5EF3165}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{822A2C0D-10EA-4B00-AAEF-3298F95C72C6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{D5054635-FD8C-43B9-941D-744E2CA00D11}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
