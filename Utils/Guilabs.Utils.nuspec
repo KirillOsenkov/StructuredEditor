@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>GuiLabs.Utils</id>
+    <summary>Miscellaneous utilities.</summary>
+    <description>
+      Miscellaneous utilities. GuiLabs.Utils.dll
+    </description>
+    <dependencies>
+    </dependencies>
+
+    <language>en-US</language>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <version>1.0.0</version>
+    <authors>Kirill Osenkov</authors>
+    <title>GuiLabs Utilities</title>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/KirillOsenkov/StructuredEditor</projectUrl>
+    <releaseNotes></releaseNotes>
+    <tags>Utilities</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\GuiLabs.Utils.dll" target="lib\net46" />
+  </files>
+</package>

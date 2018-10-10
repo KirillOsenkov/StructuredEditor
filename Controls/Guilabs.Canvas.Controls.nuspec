@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>GuiLabs.Canvas.Controls</id>
+    <summary>GDI and GDI+ control implementation for rendering a text editor.</summary>
+    <description>
+      WinForms controls and primitives to assist with painting a text editor using GDI or GDI+ on Windows.
+    </description>
+    <dependencies>
+    </dependencies>
+
+    <language>en-US</language>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <version>1.0.0</version>
+    <authors>Kirill Osenkov</authors>
+    <title>GuiLabs Canvas Controls</title>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/KirillOsenkov/StructuredEditor</projectUrl>
+    <releaseNotes></releaseNotes>
+    <tags>GuiLabs Canvas Control Controls GDI GDI+ Editor Rendering</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\GuiLabs.Canvas.Controls.dll" target="lib\net46" />
+  </files>
+</package>
