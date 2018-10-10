@@ -1,16 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using GuiLabs.Editor.Actions;
-using GuiLabs.Editor.Blocks;
-using GuiLabs.Utils;
 using System.IO;
-using GuiLabs.Canvas.Renderer;
-using GuiLabs.Undo;
+using System.Windows.Forms;
+using GuiLabs.Editor.Blocks;
 using GuiLabs.Editor.UI;
+using GuiLabs.Undo;
+using GuiLabs.Utils;
 
 namespace GuiLabs.Editor.CSharp
 {
